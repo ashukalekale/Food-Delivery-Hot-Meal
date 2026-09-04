@@ -52,6 +52,22 @@ A full-stack food delivery platform where customers can browse meals, manage a c
 ```text
 Hotmeal-foodDelivery/
 ├── admin/                 # Admin dashboard
+│   ├── public/            # Static public assets
+│   ├── src/
+│   │   ├── assets/        # Dashboard icons, logos, and images
+│   │   ├── components/
+│   │   │   ├── Navbar/    # Admin navigation bar
+│   │   │   └── Sidebar/   # Admin sidebar navigation
+│   │   ├── pages/
+│   │   │   ├── Add/       # Add food item page
+│   │   │   ├── List/      # Food catalog management page
+│   │   │   └── Orders/    # Order management page
+│   │   ├── App.jsx        # Admin routes and layout
+│   │   ├── index.css      # Global admin styles
+│   │   └── main.jsx       # Admin app entry point
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
 ├── backend/               # Express API and database models
 │   ├── config/            # Database configuration
 │   ├── controllers/       # Request handlers
@@ -59,8 +75,34 @@ Hotmeal-foodDelivery/
 │   ├── models/            # Mongoose models
 │   ├── routes/            # API routes
 │   ├── uploads/            # Uploaded food images, ignored by Git
+│   ├── package.json
 │   └── server.js          # API entry point
 ├── frontend/              # Customer-facing React application
+│   ├── public/             # Static public assets
+│   ├── src/
+│   │   ├── assets/         # Food, menu, branding, and UI images
+│   │   ├── components/
+│   │   │   ├── AppDownload/    # Mobile app download section
+│   │   │   ├── ExploreMenu/    # Food category menu
+│   │   │   ├── FoodDisplay/    # Food listing section
+│   │   │   ├── FoodItem/       # Individual food card
+│   │   │   ├── Footer/         # Site footer
+│   │   │   ├── Header/         # Home page header
+│   │   │   ├── LoginPopup/     # Login and registration modal
+│   │   │   ├── Navbar/         # Customer navigation bar
+│   │   │   └── context/        # Cart and user state management
+│   │   ├── pages/
+│   │   │   ├── Home/           # Restaurant home page
+│   │   │   ├── Cart/           # Shopping cart page
+│   │   │   ├── PlaceOrder/     # Delivery and checkout page
+│   │   │   ├── MyOrders/       # Customer order history
+│   │   │   └── Verify/         # Payment verification page
+│   │   ├── App.jsx             # Customer routes and layout
+│   │   ├── index.css           # Global customer styles
+│   │   └── main.jsx            # Customer app entry point
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
 └── README.md
 ```
 
